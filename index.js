@@ -1,13 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  return word === word.split('').reverse().join('');
 }
 
+
 /* 
-  Add your pseudocode here
+  function isPalindrome(word):
+    return word is equal to reverse(word)
+
 */
 
 /*
   Add written explanation of your solution here
+   uses the split('') method to convert the word into an array of characters,
+    reverse() to reverse the array, and join('') to convert the array back to a string. 
+   It then compares this reversed string with the original word to determine if it's a palindrome.
 */
 
 // You can run `node index.js` to view these console logs
